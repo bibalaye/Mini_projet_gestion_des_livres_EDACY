@@ -15,14 +15,14 @@ Une mini application full-stack permettant aux utilisateurs de **s'inscrire**, *
 
 ## 📸 Aperçu
 
-![Aperçu de l'application](livres-frontend-edacy/public/images/a1.png)
-![Aperçu de l'application](livres-frontend-edacy/public/images/a2.png)
-![Aperçu de l'application](livres-frontend-edacy/public/images/a3.png)
-![Aperçu de l'application](livres-frontend-edacy/public/images/a4.png)
-![Aperçu de l'application](livres-frontend-edacy/public/images/a5.png)
-![Aperçu de l'application](livres-frontend-edacy/public/images/a6.png)
-![Aperçu de l'application](livres-frontend-edacy/public/images/a7.png)
-![Aperçu de l'application](livres-frontend-edacy/public/images/a8.png)
+![Page d'accueil](./livres-frontend-edacy/public/images/a1.png)
+![Page catalogue de livres pour les visiteurs](./livres-frontend-edacy/public/images/a2.png)
+![Page 404 - Non trouvée](./livres-frontend-edacy/public/images/a3.png)
+![Page de connexion utilisateur](./livres-frontend-edacy/public/images/a4.png)
+![Page d'inscription utilisateur](./livres-frontend-edacy/public/images/a5.png)
+![Tableau de bord administrateur (CRUD)](./livres-frontend-edacy/public/images/a6.png)
+![Formulaire d'ajout de livre](./livres-frontend-edacy/public/images/a7.png)
+![Modal de confirmation de suppression](./livres-frontend-edacy/public/images/a8.png)
 
 ## 🛠️ Technologies utilisées
 
@@ -143,6 +143,13 @@ Note: Assurez-vous que votre serveur MySQL est en cours d'exécution avant d'ex�
 4. **Démarrer l'application**
    ```bash
    npm run dev
+   
+   5. **Connexion à l'application**
+      - Vous pouvez vous connecter avec les identifiants suivants :
+      ```
+      Email: test@test.com
+      Mot de passe: test123
+      ```
    ```
 
 ## 📁 Structure du Projet

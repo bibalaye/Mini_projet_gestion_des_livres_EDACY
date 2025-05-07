@@ -13,6 +13,17 @@ Une mini application full-stack permettant aux utilisateurs de **s'inscrire**, *
   - 📸 Upload d'images pour les livres
 - 📦 Architecture full-stack : Next.js (frontend) + Node.js (backend) + MySQL
 
+## 📸 Aperçu
+
+![Aperçu de l'application](livres-frontend-edacy/public/images/a1.png)
+![Aperçu de l'application](livres-frontend-edacy/public/images/a2.png)
+![Aperçu de l'application](livres-frontend-edacy/public/images/a3.png)
+![Aperçu de l'application](livres-frontend-edacy/public/images/a4.png)
+![Aperçu de l'application](livres-frontend-edacy/public/images/a5.png)
+![Aperçu de l'application](livres-frontend-edacy/public/images/a6.png)
+![Aperçu de l'application](livres-frontend-edacy/public/images/a7.png)
+![Aperçu de l'application](livres-frontend-edacy/public/images/a8.png)
+
 ## 🛠️ Technologies utilisées
 
 ### Frontend
@@ -68,7 +79,46 @@ Une mini application full-stack permettant aux utilisateurs de **s'inscrire**, *
 4. **Démarrer le serveur**
    ```bash
    npm run dev
+  ```
+### 🚀 Installation de la base de données
+
+1. **Méthode par ligne de commande**
+
+   a. **Accéder au dossier de configuration**
+   ```bash
+   cd livres-backend-edacy/config
    ```
+
+   b. **Exécuter le script d'initialisation de la base de données**
+   ```bash
+   mysql -u votre_utilisateur -p < init.sql
+   ```
+   Ce script crée la base de données `livres_db` et les tables nécessaires (users, livres) avec leurs structures.
+
+   c. **Charger les données initiales (optionnel)**
+   ```bash
+   mysql -u votre_utilisateur -p livres_db < data_livres.sql
+   ```
+   Ce script insère des données d'exemple dans les tables pour faciliter les tests.
+
+2. **Méthode avec interface graphique (WAMP, XAMPP, Laragon)**
+
+   a. **Ouvrir phpMyAdmin**
+   - Dans WAMP : cliquez sur l'icône WAMP dans la barre des tâches → phpMyAdmin
+   - Dans XAMPP : ouvrez le panneau de contrôle XAMPP → cliquez sur "Admin" à côté de MySQL
+   - Dans Laragon : cliquez sur "Database" dans le menu principal
+
+   b. **Créer une nouvelle base de données**
+   - Créez une base de données nommée `livres_db`
+
+   c. **Importer les scripts SQL**
+   - Sélectionnez la base de données `livres_db`
+   - Cliquez sur l'onglet "Importer"
+   - Parcourez et sélectionnez d'abord le fichier `init.sql` du dossier `livres-backend-edacy/config`
+   - Cliquez sur "Exécuter"
+   - Répétez l'opération avec le fichier `data_livres.sql` pour importer les données d'exemple
+
+Note: Assurez-vous que votre serveur MySQL est en cours d'exécution avant d'exécuter ces commandes ou d'utiliser l'interface graphique.
 
 ### 🎨 Installation du Frontend
 
@@ -134,10 +184,6 @@ projet/
 ## 👨‍💻 Auteur
 
 Abiboulaye Sy
-
-## 📄 Licence
-
-Ce projet est sous licence MIT.
 
 ---
 
